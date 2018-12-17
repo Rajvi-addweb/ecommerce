@@ -1,0 +1,132 @@
+/* --------------------------------------------------
+  Footer Style
+-------------------------------------------------- */
+footer {
+  padding: 65px 0;
+  h3,
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    @extend .text-uppercase;
+    @media (max-width: 580px) {
+      margin-bottom: 20px;
+    }
+    small {
+      padding: 0 5px;
+      color: $white;
+      font-size: 100%;
+      font-style: italic;
+      font-family: $playfair-display;
+      text-transform: lowercase;
+    }
+  }
+  ul {
+    margin: 0;
+    padding-left: 0;
+    li {
+      margin-bottom: 15px;
+      list-style: none;
+      a {
+        /*padding: 0 !important;*/
+        color: $grey;
+        font-size: 14px;
+        &:hover {
+          background-color: transparent !important;
+          color: $grey;
+        }
+      }
+    }
+  }
+  .social-icon {
+    li {
+      margin-right: 15px;
+      a {
+        height: 50px;
+        width: 50px;
+        padding: 5px 3px;
+        border-color: $white;
+        background-color: $white;
+        color: $dark-grey;
+        font-size: 24px;
+        vertical-align: middle;
+        &:hover {
+          background-color: $dark-grey;
+          color: $white;
+        }
+      }
+    }
+  }
+  .col-xs-6 {
+    margin-bottom: 30px;
+    @media (max-width: 580px) {
+      width: 100%;
+    }
+  }
+}
+
+
+.subscribe-form {
+  .form-group {
+    input {
+      height: 40px;
+      border-color: $grey;
+      background-color: transparent;
+      color: $grey;
+      @include css3-prefix(border-radius, 0);
+    }
+    .btn {
+      float: right;
+      margin-top: -36px;
+      margin-right: 5px;
+      padding: 8px 20px;
+      background-color: $gray-32;
+      font-size: 12px;
+    }
+  }
+}
+
+
+.bottom-footer {
+  position: relative;
+  padding-top: 25px;
+  border-top: 1px solid $black-39;
+  margin-top: 15px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-top-color: $black-39;
+    border-style: solid;
+    border-width: 9px 14px 0;
+    @include css3-prefix(transform, translateX(-50%));
+    content: '';
+
+  }
+  .horizontal-nav {
+    li {
+      margin-right: 30px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.copyright-text {
+  max-width: 300px;
+  color: $black-39;
+  p {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  img {
+    margin-top: 10px;
+  }
+}

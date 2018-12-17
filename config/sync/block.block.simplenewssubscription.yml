@@ -1,0 +1,24 @@
+uuid: 55c98303-0ea3-4730-b36e-913e3d60edd1
+langcode: en
+status: true
+dependencies:
+  module:
+    - simplenews
+  theme:
+    - addweb_ecomme
+id: simplenewssubscription
+theme: addweb_ecomme
+region: footer_top_right
+weight: -9
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Subscribe In Our News Letter'
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    subscribe_in_our_news_letter: subscribe_in_our_news_letter
+  message: ''
+  unique_id: d39a9658-a768-4fdf-b803-f7bcb22bee3f
+visibility: {  }

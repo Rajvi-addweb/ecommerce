@@ -1,0 +1,47 @@
+uuid: 2b839a62-1d19-4ddc-bb5b-c09bab38ff16
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front_featured_block.body
+    - field.field.node.front_featured_block.field_feature_block_description
+    - field.field.node.front_featured_block.field_featured_block_title
+    - field.field.node.front_featured_block.field_icon
+    - node.type.front_featured_block
+  module:
+    - image
+    - text
+    - user
+id: node.front_featured_block.teaser
+targetEntityType: node
+bundle: front_featured_block
+mode: teaser
+content:
+  field_feature_block_description:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_featured_block_title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_icon:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  links: true

@@ -1,0 +1,22 @@
+uuid: 47860e98-7ee6-4ae1-adf5-f95876de2f3a
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - addweb_ecomme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: addweb_ecomme_help
+theme: addweb_ecomme
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

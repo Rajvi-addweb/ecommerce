@@ -1,0 +1,22 @@
+uuid: b0f2aac0-2a1b-4109-b661-62d696acea33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_brands_body
+    - taxonomy.vocabulary.brands
+  module:
+    - text
+id: taxonomy_term.brands.field_brands_body
+field_name: field_brands_body
+entity_type: taxonomy_term
+bundle: brands
+label: 'Brands Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

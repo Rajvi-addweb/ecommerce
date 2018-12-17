@@ -1,0 +1,29 @@
+uuid: 79eb97c2-c73e-47b5-a549-cd5c306259e8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c4b58e9e-8d08-4727-9181-0014a1319861'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'top-head-left pull-left'
+id: contactnumber
+theme: addweb_ecomme
+region: top_header
+weight: -11
+provider: null
+plugin: 'block_content:c4b58e9e-8d08-4727-9181-0014a1319861'
+settings:
+  id: 'block_content:c4b58e9e-8d08-4727-9181-0014a1319861'
+  label: 'Contact Number'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

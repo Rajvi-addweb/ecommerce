@@ -1,0 +1,14 @@
+uuid: 00bc4a1a-2681-451b-8788-09f58a608024
+langcode: en
+status: true
+dependencies: {  }
+name: summer_collection
+label: 'summer collection'
+effects:
+  4ccf1c93-0e49-4eed-aed6-8607a40e4b19:
+    uuid: 4ccf1c93-0e49-4eed-aed6-8607a40e4b19
+    id: image_resize
+    weight: 1
+    data:
+      width: 380
+      height: 380

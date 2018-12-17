@@ -1,0 +1,28 @@
+uuid: 7c6f9516-10f1-495c-8382-0d46bd129202
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.shop-footer-menu
+  module:
+    - block_class
+    - system
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'col-md-3 col-xs-6'
+id: shopfootermenu
+theme: addweb_ecomme
+region: footer_top_left
+weight: -8
+provider: null
+plugin: 'system_menu_block:shop-footer-menu'
+settings:
+  id: 'system_menu_block:shop-footer-menu'
+  label: Shop
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

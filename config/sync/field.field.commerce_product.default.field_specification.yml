@@ -1,0 +1,22 @@
+uuid: 13227479-16d5-47e6-959e-0627a3361364
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_specification
+  module:
+    - text
+id: commerce_product.default.field_specification
+field_name: field_specification
+entity_type: commerce_product
+bundle: default
+label: Specification
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: b8c734c1-bae7-41bb-a42c-a0b88d7dae13
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-social-icon
+  module:
+    - block_class
+    - system
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: horizontal-nav
+id: headersocialicon
+theme: addweb_ecomme
+region: main_header_right
+weight: -16
+provider: null
+plugin: 'system_menu_block:header-social-icon'
+settings:
+  id: 'system_menu_block:header-social-icon'
+  label: 'Header Social Icon'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

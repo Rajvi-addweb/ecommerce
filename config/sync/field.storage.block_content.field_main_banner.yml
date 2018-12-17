@@ -1,0 +1,20 @@
+uuid: ec9c0ab4-693f-41df-8051-3e9e50ed8347
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - eck
+id: block_content.field_main_banner
+field_name: field_main_banner
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: ecomme_section_content_
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

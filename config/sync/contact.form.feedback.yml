@@ -1,0 +1,14 @@
+uuid: 12cb2e63-9616-4a79-aa02-fd5e24505aad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - rajvi.addweb@gmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

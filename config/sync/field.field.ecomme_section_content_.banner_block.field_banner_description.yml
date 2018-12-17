@@ -1,0 +1,21 @@
+uuid: 8507b605-8a69-4ee3-bb52-5d27ef7db18e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ecomme_section_content_.banner_block
+    - field.storage.ecomme_section_content_.field_banner_description
+  module:
+    - text
+id: ecomme_section_content_.banner_block.field_banner_description
+field_name: field_banner_description
+entity_type: ecomme_section_content_
+bundle: banner_block
+label: 'Banner Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

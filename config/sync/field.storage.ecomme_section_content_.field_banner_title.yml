@@ -1,0 +1,20 @@
+uuid: 23794678-558a-460c-9f63-e59c7c24a364
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: ecomme_section_content_.field_banner_title
+field_name: field_banner_title
+entity_type: ecomme_section_content_
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 4ca79963-04fb-4e2a-b37a-937ff3685d83
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - addweb_ecomme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: addweb_ecomme_powered
+theme: addweb_ecomme
+region: navigation
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

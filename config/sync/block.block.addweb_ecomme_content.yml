@@ -1,0 +1,22 @@
+uuid: 098ff510-e644-41e1-a2d6-45d32546e3bc
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - addweb_ecomme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: addweb_ecomme_content
+theme: addweb_ecomme
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

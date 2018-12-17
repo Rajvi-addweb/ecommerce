@@ -1,0 +1,17 @@
+uuid: ade1a07d-7899-4660-8b87-04a3a9cbb791
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.product_image_crop
+  module:
+    - crop
+name: product_crop
+label: 'product crop'
+effects:
+  1f1dad60-cbf7-47db-8485-21f3ac679cfd:
+    uuid: 1f1dad60-cbf7-47db-8485-21f3ac679cfd
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: product_image_crop

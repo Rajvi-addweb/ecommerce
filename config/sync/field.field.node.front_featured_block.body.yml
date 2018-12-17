@@ -1,0 +1,22 @@
+uuid: b2240159-5e36-4205-9a37-09f3363e0065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.front_featured_block
+  module:
+    - text
+id: node.front_featured_block.body
+field_name: body
+entity_type: node
+bundle: front_featured_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: a5353570-0fed-41d6-bd27-e39f9362e70f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.field_featured_variation
+field_name: field_featured_variation
+entity_type: commerce_product_variation
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

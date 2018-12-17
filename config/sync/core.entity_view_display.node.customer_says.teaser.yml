@@ -1,0 +1,57 @@
+uuid: 642d2332-a4da-4367-a52a-3600f1d54542
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customer_says.body
+    - field.field.node.customer_says.field_customer_designation
+    - field.field.node.customer_says.field_customer_image
+    - field.field.node.customer_says.field_customer_name
+    - field.field.node.customer_says.field_description
+    - image.style.medium
+    - node.type.customer_says
+  module:
+    - image
+    - text
+    - user
+id: node.customer_says.teaser
+targetEntityType: node
+bundle: customer_says
+mode: teaser
+content:
+  field_customer_designation:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_customer_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_customer_name:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_description:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  links: true

@@ -1,0 +1,33 @@
+schemas:
+  bootstrap: 8000
+  addweb_ecomme: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost/shophia/web/themes/addweb_ecomme/favicon.ico'
+  use_default: true
+logo:
+  path: 'public://logo.png'
+  url: ''
+  use_default: false
+region_wells:
+  top_header: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  above_footer: ''
+  footer_top_left: ''
+  footer_top_right: ''
+  bottom_footer: ''
+table_responsive: '-1'
+table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true

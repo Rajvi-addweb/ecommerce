@@ -1,0 +1,19 @@
+uuid: 106e0dfb-06bc-4018-b6e5-c3efdd0cde4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product.field_product_description
+field_name: field_product_description
+entity_type: commerce_product
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

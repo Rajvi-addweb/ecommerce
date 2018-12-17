@@ -1,0 +1,30 @@
+uuid: e94af816-f7d6-4cb0-b9eb-15c7fd6e31c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - system
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'top-head-right pull-right horizontal-nav'
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: addweb_ecomme_account_menu
+theme: addweb_ecomme
+region: top_header
+weight: -10
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

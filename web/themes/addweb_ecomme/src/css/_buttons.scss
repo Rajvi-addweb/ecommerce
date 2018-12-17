@@ -1,0 +1,56 @@
+/* --------------------------------------------------
+  Buttons styling
+-------------------------------------------------- */
+
+.grey-btn {
+  background-color: $grey-mix;
+  border-color: $grey-mix;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $grey-mix;
+  border-color: $grey-mix;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  @extend .text-white;
+  @extend .text-uppercase;
+  @include css3-prefix(border-radius, 0);
+  &:hover,
+  &:focus {
+    background-color: $grey;
+    border-color: $grey;
+    @extend .text-white;
+  }
+  &.btn-sm {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+  &.btn-polygon {
+    position: relative;
+    z-index: 1;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      z-index: -1;
+      height: 100%;
+      width: 40px;
+      background-color: inherit;
+      @include css3-prefix(transform, skewx(-45deg));
+      content: '';
+    }
+    &::after {
+      right: -20px;
+      left: auto;
+      @include css3-prefix(transform, skewx(45deg));
+    }
+  }
+}

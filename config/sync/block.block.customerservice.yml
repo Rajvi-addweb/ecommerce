@@ -1,0 +1,28 @@
+uuid: c13691f9-9fe4-4271-8e00-dec64dde9f44
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.customer-service
+  module:
+    - block_class
+    - system
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'col-md-5 col-xs-6'
+id: customerservice
+theme: addweb_ecomme
+region: footer_top_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:customer-service'
+settings:
+  id: 'system_menu_block:customer-service'
+  label: 'Customer Service'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
