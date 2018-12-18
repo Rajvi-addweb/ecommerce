@@ -1,0 +1,33 @@
+uuid: ddc6b2ff-e308-4d04-ba4b-94d701bb9436
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.teaser
+    - field.field.commerce_product_variation.default.attribute_size
+    - field.field.commerce_product_variation.default.field_discount
+    - field.field.commerce_product_variation.default.field_discount_percentage
+    - field.field.commerce_product_variation.default.field_featured_variation
+id: commerce_product_variation.default.teaser
+targetEntityType: commerce_product_variation
+bundle: default
+mode: teaser
+content:
+  field_discount_percentage:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  attribute_size: true
+  field_discount: true
+  field_featured_variation: true
+  list_price: true
+  price: true
+  product_id: true
+  sku: true
+  title: true

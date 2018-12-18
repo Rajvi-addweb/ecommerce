@@ -1,0 +1,19 @@
+uuid: 180a3ee0-e08d-47d1-9c63-9ea0899ae432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_title
+    - taxonomy.vocabulary.category
+id: taxonomy_term.category.field_title
+field_name: field_title
+entity_type: taxonomy_term
+bundle: category
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

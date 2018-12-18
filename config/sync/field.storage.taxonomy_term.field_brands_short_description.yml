@@ -1,0 +1,19 @@
+uuid: 4c5cae20-37ff-4c14-bf7b-9410a263fdcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_brands_short_description
+field_name: field_brands_short_description
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

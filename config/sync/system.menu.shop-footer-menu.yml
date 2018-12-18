@@ -1,0 +1,8 @@
+uuid: 9e53d6dc-70e4-40e3-a6ac-859de80f4b1f
+langcode: en
+status: true
+dependencies: {  }
+id: shop-footer-menu
+label: 'Shop Footer Menu'
+description: ''
+locked: false

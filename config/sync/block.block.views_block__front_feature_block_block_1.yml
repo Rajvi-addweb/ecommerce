@@ -1,0 +1,34 @@
+uuid: 09764848-565d-496b-a8ed-aeb3fda6aa00
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_feature_block
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'section arrows'
+id: views_block__front_feature_block_block_1
+theme: addweb_ecomme
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:front_feature_block-block_1'
+settings:
+  id: 'views_block:front_feature_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

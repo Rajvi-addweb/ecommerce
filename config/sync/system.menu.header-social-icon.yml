@@ -1,0 +1,8 @@
+uuid: dab9dffa-e39a-46eb-9319-37b387b4812c
+langcode: en
+status: true
+dependencies: {  }
+id: header-social-icon
+label: 'Header Social Icon'
+description: ''
+locked: false

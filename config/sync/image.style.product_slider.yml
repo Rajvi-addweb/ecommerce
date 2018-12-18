@@ -1,0 +1,7 @@
+uuid: c0411716-c834-4394-b3be-f6ba14981971
+langcode: en
+status: true
+dependencies: {  }
+name: product_slider
+label: 'product slider'
+effects: {  }

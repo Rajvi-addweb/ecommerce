@@ -1,0 +1,22 @@
+uuid: 885176b0-a460-4699-a931-cf10162a2a45
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_highlights
+  module:
+    - text
+id: commerce_product.default.field_highlights
+field_name: field_highlights
+entity_type: commerce_product
+bundle: default
+label: Highlights
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

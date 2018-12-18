@@ -1,0 +1,10 @@
+uuid: ad86d2e8-8092-4a00-a0fd-cec540b2dc1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: ecomme_section_content_.token
+label: Token
+targetEntityType: ecomme_section_content_
+cache: true

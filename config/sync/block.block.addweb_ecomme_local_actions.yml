@@ -1,0 +1,20 @@
+uuid: 07a775b1-9a20-454b-aefe-913918b58547
+langcode: en
+status: false
+dependencies:
+  theme:
+    - addweb_ecomme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: addweb_ecomme_local_actions
+theme: addweb_ecomme
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

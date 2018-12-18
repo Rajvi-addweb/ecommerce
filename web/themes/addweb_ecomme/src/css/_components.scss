@@ -1,0 +1,194 @@
+/* --------------------------------------------------
+   Components
+-------------------------------------------------- */
+
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-light-orange {
+  background-color: $light-orange;
+}
+.bg-light-grey {
+  background-color: $light-grey;
+}
+
+.bg-light-brown {
+  background-color: $light-brown;
+}
+.bg-dark-grey {
+  background-color: $dark-grey;
+  color: $white;
+}
+
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+/* Section design */
+.section {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 100px;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+}
+
+
+/* Grid */
+.grids {
+  display: inline-block;
+  width: 100%;
+  .grid {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    &.grid-3 {
+      margin-right: 20px;
+      @include css3-sufix(width, calc(33% - 15px));
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    &.grid-4 {
+      margin-right: 20px;
+      @include css3-sufix(width, calc(25% - 15px));
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+      &:nth-child(4n + 1) {
+        clear: left;
+      }
+      @media (max-width: 992px) {
+        @include css3-sufix(width, calc(50% - 10px));
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &:nth-child(2n + 1) {
+          clear: left;
+        }
+      }
+      @media (max-width: 580px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    &.grid-6 {
+      margin-right: 20px;
+      @include css3-sufix(width, calc(16.66% - 16.67px));
+      &:nth-child(6n) {
+        margin-right: 0;
+      }
+      @media (max-width: 992px) {
+        @include css3-sufix(width, calc(33% - 15px));
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:nth-child(3n + 1) {
+          clear: left;
+        }
+      }
+      @media (max-width: 580px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+/* horizontal Navigation */
+.horizontal-nav {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  li {
+    float: left;
+    list-style: none;
+  }
+}
+
+/* Socail Icon */
+.social-icon {
+  li {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      padding: 4px;
+      border: 2px solid $light-brown;
+      color: $light-brown;
+      text-align: center;
+      @include css3-prefix(border-radius, 100px);
+      &:hover {
+        background-color: $light-brown;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+
+.triangle-arrow {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-top-color: $white;
+    border-style: solid;
+    border-width: 60px 200px 0;
+    @include css3-prefix(transform, translateX(-50%));
+    content: '';
+    @media only screen and (max-width: 992px) {
+      border-width: 35px 147px 0;
+    }
+  }
+  &.arrow-sm {
+    &::before {
+      border-width: 30px 180px 0;
+    }
+  }
+  @media(max-width: 767px) {
+    &::before {
+      display: none;
+    }
+  }
+}

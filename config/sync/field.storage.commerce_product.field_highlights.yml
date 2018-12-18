@@ -1,0 +1,19 @@
+uuid: 809ba1c4-4de8-4c7c-ae21-f860fadf5200
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product.field_highlights
+field_name: field_highlights
+entity_type: commerce_product
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

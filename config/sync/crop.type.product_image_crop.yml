@@ -1,0 +1,12 @@
+uuid: 14e328c1-627f-470d-bf9e-7e803685cec6
+langcode: en
+status: true
+dependencies: {  }
+label: 'product image crop'
+id: product_image_crop
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

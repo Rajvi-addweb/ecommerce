@@ -1,0 +1,28 @@
+uuid: 9804092a-50ef-4cf0-9376-f85d1ca61140
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.information
+  module:
+    - block_class
+    - system
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'col-md-4 col-xs-6'
+id: information
+theme: addweb_ecomme
+region: footer_top_left
+weight: -7
+provider: null
+plugin: 'system_menu_block:information'
+settings:
+  id: 'system_menu_block:information'
+  label: Information
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

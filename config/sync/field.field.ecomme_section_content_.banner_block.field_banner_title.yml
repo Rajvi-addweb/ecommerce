@@ -1,0 +1,21 @@
+uuid: dab4de6f-4610-445e-986e-8108951505e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ecomme_section_content_.banner_block
+    - field.storage.ecomme_section_content_.field_banner_title
+  module:
+    - text
+id: ecomme_section_content_.banner_block.field_banner_title
+field_name: field_banner_title
+entity_type: ecomme_section_content_
+bundle: banner_block
+label: 'Banner Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

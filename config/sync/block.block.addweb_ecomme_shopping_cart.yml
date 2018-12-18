@@ -1,0 +1,24 @@
+uuid: 531d48d8-5483-481a-b987-a3a86a7ac834
+langcode: en
+status: false
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - addweb_ecomme
+_core:
+  default_config_hash: s0blj-MttMjnmKEuX66B0R-2HUXDx0dSLXhnrDIvQi8
+id: addweb_ecomme_shopping_cart
+theme: addweb_ecomme
+region: header
+weight: -16
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

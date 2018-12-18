@@ -1,0 +1,21 @@
+uuid: 2958dff5-33da-410d-b085-53dae5a678a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ecomme_section.banner_block
+    - field.storage.ecomme_section.field_banner
+id: ecomme_section.banner_block.field_banner
+field_name: field_banner
+entity_type: ecomme_section
+bundle: banner_block
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:ecomme_section_content_'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 5daf6186-d9f3-4c11-932b-3fb7347d10d2
+langcode: en
+status: true
+dependencies: {  }
+id: advanced-search
+label: 'Advanced Search'
+description: ''
+locked: false

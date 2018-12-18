@@ -1,0 +1,10 @@
+uuid: e8a6f00a-dda1-433f-af64-1a24836cfb17
+langcode: en
+status: true
+dependencies: {  }
+id: ecomme_section_content_
+label: 'Ecomme Section Content '
+created: false
+changed: false
+uid: false
+title: true

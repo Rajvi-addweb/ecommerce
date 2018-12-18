@@ -1,0 +1,23 @@
+uuid: 692cb5a7-c0ee-49a4-8da4-92ed5f0f3f89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_featured_on_home
+    - taxonomy.vocabulary.category
+id: taxonomy_term.category.field_featured_on_home
+field_name: field_featured_on_home
+entity_type: taxonomy_term
+bundle: category
+label: 'Featured On Home'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

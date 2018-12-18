@@ -1,0 +1,29 @@
+uuid: 3f38246e-42d7-4dcc-825c-bf35ce68dfa3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2808327a-9009-4378-9239-37910e5edeec'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: copyright-text
+id: bottomfootersection
+theme: addweb_ecomme
+region: bottom_footer
+weight: 0
+provider: null
+plugin: 'block_content:2808327a-9009-4378-9239-37910e5edeec'
+settings:
+  id: 'block_content:2808327a-9009-4378-9239-37910e5edeec'
+  label: 'Bottom Footer Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

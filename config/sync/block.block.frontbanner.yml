@@ -1,0 +1,29 @@
+uuid: 4478c66d-ddf0-4bfd-9e5b-54760feb8b33
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_:d53d3e30-97fe-495e-b8d3-e26dc51d9b1e'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - addweb_ecomme
+third_party_settings:
+  block_class:
+    classes: 'banner triangle-arrow section'
+id: frontbanner
+theme: addweb_ecomme
+region: banner_block
+weight: -15
+provider: null
+plugin: 'block_content:d53d3e30-97fe-495e-b8d3-e26dc51d9b1e'
+settings:
+  id: 'block_content:d53d3e30-97fe-495e-b8d3-e26dc51d9b1e'
+  label: 'Front Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

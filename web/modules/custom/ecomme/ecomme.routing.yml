@@ -1,0 +1,8 @@
+ecomme.settings:
+  path: '/admin/structure/ecomme/settings'
+  defaults:
+    _form: '\Drupal\ecomme\Form\ecommeSettingsForm'
+    _title: 'Ecommerce Home Page Category Product Listing Settings Form'
+  requirements:
+    _permission: 'administer site configuration'
+

@@ -1,0 +1,17 @@
+uuid: 34bf13f8-79df-4452-a6ad-e302ec0e6ddd
+langcode: en
+status: true
+dependencies: {  }
+name: 'SUBSCRIBE in OUR NEWS LETTER'
+id: subscribe_in_our_news_letter
+description: ''
+format: plain
+priority: 0
+receipt: true
+from_name: shophia
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: rajvi.addweb@gmail.com
+hyperlinks: true
+new_account: none
+opt_inout: double
+weight: 0

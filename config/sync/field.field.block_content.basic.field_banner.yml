@@ -1,0 +1,21 @@
+uuid: c41dbaf3-72c0-4f02-b836-cc8bb42454a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_banner
+id: block_content.basic.field_banner
+field_name: field_banner
+entity_type: block_content
+bundle: basic
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:ecomme_section'
+  handler_settings: {  }
+field_type: entity_reference

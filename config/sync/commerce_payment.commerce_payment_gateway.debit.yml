@@ -1,0 +1,19 @@
+uuid: 9c2d05c9-77a1-4809-8cea-895114144e70
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_stripe
+id: debit
+label: credit
+weight: null
+plugin: stripe
+configuration:
+  publishable_key: pk_test_n3df7NP5kLIVHtsjyOuSr4O0
+  secret_key: sk_test_RuBNjMuS1uTwVWTbOBQowPGD
+  display_label: Stripe
+  mode: test
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

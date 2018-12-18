@@ -1,0 +1,51 @@
+uuid: f81e020a-3a73-413b-a4e9-50dab9db031e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.ecomme_section_content_.banner_block
+    - field.field.ecomme_section_content_.banner_block.field_banner_description
+    - field.field.ecomme_section_content_.banner_block.field_banner_image
+    - field.field.ecomme_section_content_.banner_block.field_banner_title
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: ecomme_section_content_.banner_block.default
+targetEntityType: ecomme_section_content_
+bundle: banner_block
+mode: default
+content:
+  field_banner_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_banner_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_banner_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

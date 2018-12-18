@@ -1,0 +1,12 @@
+global-styling:
+  css:
+    theme:
+      build/assets/thirdparty/OwlCarousel/css/owl.carousel.min.css: {}
+      build/assets/thirdparty/OwlCarousel/css/owl.theme.default.min.css: {}
+      build/css/style.min.css: {}
+      build/css/style.min.css.map: {}
+      
+global-js:      
+  js:
+    build/assets/thirdparty/OwlCarousel/js/owl.carousel.min.js: {}
+    build/js/theme.min.js: {}

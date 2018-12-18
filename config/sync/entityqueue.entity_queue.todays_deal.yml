@@ -1,0 +1,25 @@
+uuid: 0dfd02d3-3559-4a37-8bc5-df2a982eacac
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: todays_deal
+label: 'Todays deal'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: commerce_product
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      default: default
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

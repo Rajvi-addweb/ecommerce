@@ -1,0 +1,9 @@
+uuid: d077b582-1488-40d2-a461-dddb071c6355
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.ecomme_section
+name: 'Banner Block'
+type: banner_block
+description: ''
