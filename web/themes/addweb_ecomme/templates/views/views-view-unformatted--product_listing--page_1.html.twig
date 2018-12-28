@@ -29,7 +29,9 @@
     %}
     <div class="grid grid-4">
       <div{{ row.attributes.addClass(row_classes) }}>
-        {{- row.content -}}
+        <div class="summer-product">
+          {{- row.content -}}
+        </div>
       </div>
     </div>
   {% endfor %}

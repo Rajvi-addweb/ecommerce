@@ -1,0 +1,11 @@
+uuid: 301f4a23-45ad-43d2-a146-e23b6826b2ed
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search_content__page_1_field_product_title
+display_id: views_page---search_content__page_1
+field_identifier: field_product_title
+default_sort: false
+default_order: asc
+label: 'Product Title'
+weight: 0

@@ -4,13 +4,13 @@ status: true
 dependencies: {  }
 id: cash_on_delivery
 label: 'Cash On Delivery'
-weight: null
+weight: -10
 plugin: manual
 configuration:
   instructions:
     value: ''
     format: plain_text
-  display_label: Manual
+  display_label: 'Cash On Delivery'
   mode: n/a
   payment_method_types:
     - credit_card

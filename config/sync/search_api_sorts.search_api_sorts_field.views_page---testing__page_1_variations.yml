@@ -1,0 +1,11 @@
+uuid: dc76a72b-05d6-4e9b-b66f-9c2741b8d367
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---testing__page_1_variations
+display_id: views_page---testing__page_1
+field_identifier: variations
+default_sort: false
+default_order: asc
+label: Variations
+weight: 0

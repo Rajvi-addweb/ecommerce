@@ -1,0 +1,11 @@
+uuid: 787abc3a-2321-4f98-917b-c8a0da7b406a
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---testing__page_1_attribute_size
+display_id: views_page---testing__page_1
+field_identifier: attribute_size
+default_sort: false
+default_order: asc
+label: Size
+weight: 0

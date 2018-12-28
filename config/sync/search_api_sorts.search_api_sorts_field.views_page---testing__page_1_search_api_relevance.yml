@@ -1,0 +1,11 @@
+uuid: 117a3558-f3fe-4ab0-ade5-612735f29497
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---testing__page_1_search_api_relevance
+display_id: views_page---testing__page_1
+field_identifier: search_api_relevance
+default_sort: false
+default_order: desc
+label: Relevance
+weight: 0

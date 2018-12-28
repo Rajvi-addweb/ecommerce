@@ -1,0 +1,29 @@
+uuid: f8ea304a-1513-4a76-873e-f6cf62590ebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_listing
+  module:
+    - system
+    - views
+  theme:
+    - addweb_ecomme
+id: exposedformproduct_listingpage_1
+theme: addweb_ecomme
+region: sidebar_first
+weight: -16
+provider: null
+plugin: 'views_exposed_filter_block:product_listing-page_1'
+settings:
+  id: 'views_exposed_filter_block:product_listing-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /product-listing/summer_collection
+    negate: false
+    context_mapping: {  }

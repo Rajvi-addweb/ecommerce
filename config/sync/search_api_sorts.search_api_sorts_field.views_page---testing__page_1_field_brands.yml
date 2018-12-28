@@ -1,0 +1,11 @@
+uuid: ec303907-193a-4f54-8124-93616e941cef
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---testing__page_1_field_brands
+display_id: views_page---testing__page_1
+field_identifier: field_brands
+default_sort: false
+default_order: asc
+label: Brands
+weight: 0

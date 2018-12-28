@@ -10,14 +10,38 @@ dependencies:
     - field.field.commerce_product.default.field_category
     - field.field.commerce_product.default.field_featured_image
     - field.field.commerce_product.default.field_featured_on_home
+    - field.field.commerce_product.default.field_highlights
+    - field.field.commerce_product.default.field_product_description
     - field.field.commerce_product.default.field_product_gallery
     - field.field.commerce_product.default.field_product_title
+    - field.field.commerce_product.default.field_specification
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
     - image.style.product_crop
   module:
     - commerce_product
+    - ds
     - image
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_featured_image
+        - variations
 _core:
   default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
 id: commerce_product.default.teaser
@@ -33,23 +57,26 @@ content:
       image_link: content
     third_party_settings: {  }
     type: image
-    region: content
+    region: ds_content
   variations:
     type: commerce_add_to_cart
     weight: 1
+    region: ds_content
     label: hidden
     settings:
       combine: true
     third_party_settings: {  }
-    region: content
 hidden:
   body: true
   created: true
   field_brands: true
   field_category: true
   field_featured_on_home: true
+  field_highlights: true
+  field_product_description: true
   field_product_gallery: true
   field_product_title: true
+  field_specification: true
   stores: true
   title: true
   uid: true

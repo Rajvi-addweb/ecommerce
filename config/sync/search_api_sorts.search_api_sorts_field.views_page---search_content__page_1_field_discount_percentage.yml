@@ -1,0 +1,11 @@
+uuid: b1f3ee49-d108-4c45-8c09-88d20643b79b
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search_content__page_1_field_discount_percentage
+display_id: views_page---search_content__page_1
+field_identifier: field_discount_percentage
+default_sort: false
+default_order: asc
+label: 'Discount Percentage'
+weight: 0

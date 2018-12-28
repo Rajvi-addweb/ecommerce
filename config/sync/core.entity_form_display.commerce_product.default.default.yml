@@ -13,11 +13,13 @@ dependencies:
     - field.field.commerce_product.default.field_product_description
     - field.field.commerce_product.default.field_product_gallery
     - field.field.commerce_product.default.field_product_title
+    - field.field.commerce_product.default.field_review
     - field.field.commerce_product.default.field_specification
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
     - image.style.thumbnail
   module:
+    - comment
     - commerce
     - image_widget_crop
     - inline_entity_form
@@ -125,6 +127,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_review:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_specification:
     weight: 16

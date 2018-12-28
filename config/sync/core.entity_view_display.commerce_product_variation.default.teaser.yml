@@ -8,12 +8,23 @@ dependencies:
     - field.field.commerce_product_variation.default.attribute_size
     - field.field.commerce_product_variation.default.field_discount
     - field.field.commerce_product_variation.default.field_discount_percentage
+    - field.field.commerce_product_variation.default.field_discount_price
     - field.field.commerce_product_variation.default.field_featured_variation
+    - field.field.commerce_product_variation.default.weight
 id: commerce_product_variation.default.teaser
 targetEntityType: commerce_product_variation
 bundle: default
 mode: teaser
 content:
+  attribute_size:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   field_discount_percentage:
     type: string
     weight: 0
@@ -23,11 +34,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
-  attribute_size: true
   field_discount: true
+  field_discount_price: true
   field_featured_variation: true
   list_price: true
   price: true
   product_id: true
   sku: true
   title: true
+  weight: true

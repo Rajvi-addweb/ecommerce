@@ -1,0 +1,29 @@
+uuid: d9805f1d-d8f8-4034-9834-ecda7594540d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.brands
+  module:
+    - facets
+    - system
+  theme:
+    - addweb_ecomme
+id: brands
+theme: addweb_ecomme
+region: sidebar_first
+weight: -15
+provider: null
+plugin: 'facet_block:brands'
+settings:
+  id: 'facet_block:brands'
+  label: Brands
+  provider: facets
+  label_display: visible
+  block_id: brands
+visibility:
+  request_path:
+    id: request_path
+    pages: /listing-of-products
+    negate: false
+    context_mapping: {  }

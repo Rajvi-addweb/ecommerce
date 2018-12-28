@@ -25,6 +25,11 @@ content:
   language:
     weight: 0
     region: content
+  simplenews:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   timezone:
     weight: 6
     region: content

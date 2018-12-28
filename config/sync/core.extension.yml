@@ -4,11 +4,13 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   automated_cron: 0
+  better_exposed_filters: 0
   block: 0
   block_class: 0
   block_content: 0
   bootstrap_basic_image_gallery: 0
   breakpoint: 0
+  browser_push_notification: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -21,13 +23,16 @@ module:
   commerce_price: 0
   commerce_product: 0
   commerce_promotion: 0
+  commerce_shipping: 0
   commerce_store: 0
+  commerce_stripe: 0
   commerce_tax: 0
   conditional_fields: 0
   config: 0
   contact: 0
   contextual: 0
   crop: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   ds_switch_view_mode: 0
@@ -39,12 +44,15 @@ module:
   entity: 0
   entity_reference_revisions: 0
   entityqueue: 0
-  fancy_login: 0
+  facets: 0
+  facets_range_widget: 0
+  facets_rest: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  fivestar: 0
   focal_point: 0
   fontawesome: 0
   fontawesome_menu_icons: 0
@@ -64,24 +72,36 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  physical: 0
   profile: 0
   quickedit: 0
+  rating: 0
   rdf: 0
   responsive_image: 0
-  search: 0
+  rest: 0
+  search_api: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
+  search_api_sorts: 0
+  serialization: 0
+  simplelogin: 0
   simplenews: 0
   state_machine: 0
   swiftmailer: 0
   system: 0
   taxonomy: 0
+  taxonomy_machine_name: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
   views_ui: 0
+  votingapi: 0
   ds: 1
   menu_link_content: 1
+  pathauto: 1
   ds_extras: 2
   views: 10
   commerce_base: 1000

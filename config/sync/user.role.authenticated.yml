@@ -13,6 +13,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'create default commerce_product_review'
   - 'manage own commerce_payment_method'
   - 'post comments'
   - 'search content'
@@ -22,4 +23,5 @@ permissions:
   - 'view any ecomme_section entities'
   - 'view any ecomme_section_content_ entities'
   - 'view commerce_product'
+  - 'view commerce_product_review'
   - 'view own commerce_order'

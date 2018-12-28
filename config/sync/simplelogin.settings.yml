@@ -1,0 +1,7 @@
+background_active: 1
+background_image:
+  - '72'
+background_color: '#00bfff'
+background_opacity: 0
+wrapper_width: '360'
+unset_css: ''

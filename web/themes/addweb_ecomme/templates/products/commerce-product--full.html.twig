@@ -27,10 +27,16 @@
     <div class="productdetail-right">
       {{- product.field_product_title -}}
       {{- product.variation_price -}}
+      {{- product.variation_field_discount_price -}}
       {{- product.variations -}}
       {{- product.field_product_description -}}
       {{- product.field_highlights -}}
       {{- product.field_specification -}}
+      {{- product.field_rating -}}
+      {{- product.field_review -}}
+    <div class="reviews">
+      <a href='/view-all-reviews/{{ product_entity.product_id.value }}'>View All Reviews</a>
+    </div>
     </div>
   </div>
 </article>

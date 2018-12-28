@@ -1,0 +1,8 @@
+uuid: 96c2971e-84a2-4ba2-afe8-5ee5320500c9
+langcode: en
+status: true
+dependencies: {  }
+id: product_review
+label: 'Product Review'
+target_entity_type_id: commerce_product
+description: ''
