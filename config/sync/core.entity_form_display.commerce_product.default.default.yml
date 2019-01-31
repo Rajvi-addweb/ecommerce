@@ -11,7 +11,6 @@ dependencies:
     - field.field.commerce_product.default.field_featured_on_home
     - field.field.commerce_product.default.field_highlights
     - field.field.commerce_product.default.field_product_description
-    - field.field.commerce_product.default.field_product_gallery
     - field.field.commerce_product.default.field_product_title
     - field.field.commerce_product.default.field_review
     - field.field.commerce_product.default.field_specification
@@ -104,21 +103,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea_with_summary
-    region: content
-  field_product_gallery:
-    weight: 9
-    settings:
-      show_default_crop: true
-      warn_multiple_usages: true
-      preview_image_style: thumbnail
-      crop_preview_image_style: crop_thumbnail
-      crop_list:
-        - product_image_crop
-      progress_indicator: throbber
-      crop_types_required: {  }
-      show_crop_area: false
-    third_party_settings: {  }
-    type: image_widget_crop
     region: content
   field_product_title:
     weight: 7

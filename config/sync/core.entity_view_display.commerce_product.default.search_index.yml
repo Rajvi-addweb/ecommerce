@@ -12,8 +12,8 @@ dependencies:
     - field.field.commerce_product.default.field_featured_on_home
     - field.field.commerce_product.default.field_highlights
     - field.field.commerce_product.default.field_product_description
-    - field.field.commerce_product.default.field_product_gallery
     - field.field.commerce_product.default.field_product_title
+    - field.field.commerce_product.default.field_review
     - field.field.commerce_product.default.field_specification
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
@@ -63,7 +63,7 @@ hidden:
   field_featured_on_home: true
   field_highlights: true
   field_product_description: true
-  field_product_gallery: true
+  field_review: true
   field_specification: true
   stores: true
   title: true

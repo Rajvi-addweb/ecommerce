@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.phone_number
     - node.type.page
   module:
     - path
+    - telephone
     - text
 _core:
   default_config_hash: KSvzyFhdLuxniTsunUnUfpfMmod2l57GibtVjL8ymHM
@@ -35,6 +37,13 @@ content:
     weight: 30
     settings: {  }
     third_party_settings: {  }
+    region: content
+  phone_number:
+    weight: 122
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
     region: content
   promote:
     type: boolean_checkbox

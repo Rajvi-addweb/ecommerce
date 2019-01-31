@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /product-listing/summer_collection
+    pages: "/product-listing/summer_collection\r\n/product-listing/discount_30\r\n/product-listing/lather_product\r\n/product-listing/parish_hilton_collection\r\n/product-listing/50_discount"
     negate: false
     context_mapping: {  }

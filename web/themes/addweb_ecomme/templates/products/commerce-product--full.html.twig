@@ -20,12 +20,12 @@
  */
 #}
 <article{{ attributes }}>
-  <div class="productdetail">
+  <div class="productdetail"> 
     <div class="productdetail-left">
-      {{- product.field_product_gallery  -}}
+      {{- product.variation_field_multiple_image -}}
     </div>
     <div class="productdetail-right">
-      {{- product.field_product_title -}}
+      {{- product.variation_field_variation_title -}} 
       {{- product.variation_price -}}
       {{- product.variation_field_discount_price -}}
       {{- product.variations -}}
@@ -34,9 +34,11 @@
       {{- product.field_specification -}}
       {{- product.field_rating -}}
       {{- product.field_review -}}
+      <!-- {{ dump(product|keys) }} -->
     <div class="reviews">
-      <a href='/view-all-reviews/{{ product_entity.product_id.value }}'>View All Reviews</a>
+      <a href='/view-all-reviews/{{ product_entity.product_id.value }}'>view-all-reviews</a>
     </div>
+      {{- product.uid -}}
     </div>
   </div>
 </article>

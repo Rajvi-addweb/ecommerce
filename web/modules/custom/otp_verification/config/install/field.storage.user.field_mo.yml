@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+    - otp_verification
+  enforced:
+    module:
+      - otp_verification
+id: user.field_mo
+field_name: field_mo
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,132 @@
+<?php
+
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Form\FormStateInterface;
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+function otp_verification_user_insert(Drupal\Core\Entity\EntityInterface $entity){
+
+  $user_id = $entity->get('uid')->getString();
+  
+  $mobile_number = $entity->get('field_mo')->getString();
+  $api_key = \Drupal::config('otp_verification.settings')->get('api_key');
+  $six_digit_random_number = mt_rand(100000, 999999);
+  $access_key = generateRandomString(16);
+
+  $query = \Drupal::database()->insert('otp_verification');
+  $query-> fields ([
+    'uid' => $user_id,
+    'otp_verify' => 0,
+    'otp_number' => $six_digit_random_number,
+    'otp_key' => $access_key,
+  ]);
+ 
+  $query-> execute();
+  $fields = array(
+        "sender_id" => "FSTSMS",
+        "message" => $six_digit_random_number,
+        "language" => "english",
+        "route" => "p",
+        "numbers" => $mobile_number,
+    );
+
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+      CURLOPT_URL => "https://www.fast2sms.com/dev/bulk",
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_ENCODING => "",
+      CURLOPT_MAXREDIRS => 10,
+      CURLOPT_TIMEOUT => 30,
+      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+      CURLOPT_CUSTOMREQUEST => "POST",
+      CURLOPT_POSTFIELDS => json_encode($fields),
+      CURLOPT_HTTPHEADER => array(
+        "authorization: H2jOAgK1PUGUdzYhl8PmLFZyUZzNWGiDkjygbJnSbZwZbYs77ER9CpGFH8n6",
+        "accept: */*",
+        "cache-control: no-cache",
+        "content-type: application/json"
+      ),
+    ));
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+
+    curl_close($curl);
+
+      if ($err) {
+        echo "cURL Error #:" . $err;
+      } else {
+        echo $response;
+      }
+
+  $response = new RedirectResponse('/user/registation/verify/' . $access_key);
+  $response->send();  
+}
+
+
+
+function otp_verification_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /*switch ($form_id) {
+    // Alter login form and add own custom submit handler.
+    case 'user_login_form':
+      $form['#submit'][] = 'login_submit';
+      break;
+  }*/
+
+  if ($form_id == 'user_pass_reset') {
+
+    $current_path = \Drupal::service('path.current')->getPath();
+    $path_args = explode('/', $current_path);
+    
+    $uid = $path_args[3];
+
+    $query = \Drupal::database()->select('otp_verification', 'nfd');
+    $query-> fields ('nfd', ['otp_verify','otp_key']);
+    $query-> condition ('nfd.uid', $uid);
+    $result = $query-> execute() -> fetchAll();
+    $otp_verify = $result[0]->otp_verify;
+    $access_key = $result[0]->otp_key;
+    
+    if ($otp_verify == 0) {
+      $response = new RedirectResponse('/user/registation/verify/' . $access_key);
+      $response->send();
+    }
+    $form['#validate'][] = 'login_submit';
+  }
+
+}
+
+function login_submit(&$form, FormStateInterface $form_state) {
+  $form_values = $form_state->getValues();
+   $users = \Drupal::entityTypeManager()->getStorage('user')
+  ->loadByProperties(['name' => $form_values['name']]);
+  $user = reset($users);
+  if ($user) {
+    $uid = $user->id();
+  }
+
+  $query = \Drupal::database()->select('otp_verification', 'nfd');
+  $query-> fields ('nfd', ['otp_verify','otp_key']);
+  $query-> condition ('nfd.uid', $uid);
+  $result = $query-> execute() -> fetchAll();
+  $otp_verify = $result[0]->otp_verify;
+  $access_key = $result[0]->otp_key;
+
+  if ($otp_verify == 0) {
+    $response = new RedirectResponse('/user/registation/verify/' . $access_key);
+    $response->send();
+  }
+
+}
+

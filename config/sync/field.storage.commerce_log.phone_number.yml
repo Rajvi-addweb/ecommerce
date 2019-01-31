@@ -1,0 +1,19 @@
+uuid: d31abb83-25f7-4e1f-ab41-bb2119d73ad8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_log
+    - telephone
+id: commerce_log.phone_number
+field_name: phone_number
+entity_type: commerce_log
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

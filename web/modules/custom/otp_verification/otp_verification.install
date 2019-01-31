@@ -1,0 +1,27 @@
+<?php
+
+function otp_verification_schema() {
+  if(!db_table_exists('otp_verification')) {
+
+  $schema['otp_verification'] = array(
+    'description' => 'otp verification data store',
+    'fields' => array(
+      'uid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'otp_verify' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'default' => 0,
+      ),
+      'otp_number' => array(
+        'type' => 'varchar',
+        'length' => 255,
+      ),
+    ),
+  );
+}
+  return $schema;
+}

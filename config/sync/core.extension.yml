@@ -13,11 +13,13 @@ module:
   browser_push_notification: 0
   ckeditor: 0
   color: 0
+  color_field: 0
   comment: 0
   commerce: 0
   commerce_cart: 0
   commerce_checkout: 0
   commerce_log: 0
+  commerce_marketplace: 0
   commerce_order: 0
   commerce_payment: 0
   commerce_price: 0
@@ -36,6 +38,7 @@ module:
   datetime: 0
   dblog: 0
   ds_switch_view_mode: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   eck: 0
   ecomme: 0
@@ -44,9 +47,6 @@ module:
   entity: 0
   entity_reference_revisions: 0
   entityqueue: 0
-  facets: 0
-  facets_range_widget: 0
-  facets_rest: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -70,6 +70,7 @@ module:
   menu_ui: 0
   node: 0
   options: 0
+  otp_verification: 0
   page_cache: 0
   path: 0
   physical: 0
@@ -79,22 +80,22 @@ module:
   rdf: 0
   responsive_image: 0
   rest: 0
-  search_api: 0
-  search_api_db: 0
-  search_api_db_defaults: 0
-  search_api_sorts: 0
+  rules: 0
   serialization: 0
   simplelogin: 0
   simplenews: 0
+  smtp: 0
   state_machine: 0
   swiftmailer: 0
   system: 0
   taxonomy: 0
   taxonomy_machine_name: 0
+  telephone: 0
   text: 0
   token: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
   update: 0
   user: 0
   views_ui: 0

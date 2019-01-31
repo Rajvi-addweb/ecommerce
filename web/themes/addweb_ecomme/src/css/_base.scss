@@ -1,5 +1,5 @@
 body {
-  font-size: 14px;
+  font-size: 16px;
   font-family: $lato;
   margin-top: 0;
 }
@@ -8,4 +8,8 @@ body {
 img {
   height: auto;
   max-width: 100%;
+}
+
+.main-container {
+  padding: 15px 0;
 }

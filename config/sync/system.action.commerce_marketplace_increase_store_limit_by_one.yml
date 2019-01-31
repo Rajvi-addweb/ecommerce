@@ -1,0 +1,13 @@
+uuid: 5f8fa799-9a70-46ce-9eaa-32204a409e9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_marketplace
+_core:
+  default_config_hash: kxJ-ygxvUXPMCXBZ3-vA-IvntRFtniPsp5MKq1-xaAM
+id: commerce_marketplace_increase_store_limit_by_one
+label: 'Increase store type limit by one'
+type: commerce_store
+plugin: commerce_marketplace_increase_store_limit_by_one
+configuration: {  }

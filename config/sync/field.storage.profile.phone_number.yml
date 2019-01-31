@@ -1,0 +1,19 @@
+uuid: 3424f3ee-f9f2-45c1-9132-714dd9a28ef7
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - telephone
+id: profile.phone_number
+field_name: phone_number
+entity_type: profile
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

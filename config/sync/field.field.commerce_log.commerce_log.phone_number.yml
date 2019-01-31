@@ -1,0 +1,21 @@
+uuid: 7504c957-df98-425c-96c1-df59e1a066b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_log.phone_number
+  module:
+    - commerce_log
+    - telephone
+id: commerce_log.commerce_log.phone_number
+field_name: phone_number
+entity_type: commerce_log
+bundle: commerce_log
+label: 'Phone number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

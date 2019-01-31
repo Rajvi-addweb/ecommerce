@@ -1,0 +1,13 @@
+uuid: 24501c23-32a8-4b11-b09e-f7de0a8e4f16
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_marketplace
+_core:
+  default_config_hash: 1HCFdWdwFJjHOG8X-HCJT_MoyYrzQXNKPxeZq0A_Pho
+id: commerce_marketplace_increase_owner_limit_by_one
+label: 'Increase owner store limit by one'
+type: commerce_store
+plugin: commerce_marketplace_increase_owner_limit_by_one
+configuration: {  }

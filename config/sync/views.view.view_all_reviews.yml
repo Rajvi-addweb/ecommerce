@@ -6,10 +6,14 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - core.entity_view_display.comment.product_review.default
     - field.storage.commerce_product.field_review
+    - user.role.administrator
+    - user.role.anonymous
+    - user.role.authenticated
   module:
     - comment
     - commerce
     - commerce_product
+    - user
 id: view_all_reviews
 label: 'View All Reviews'
 module: views
@@ -26,8 +30,12 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            anonymous: anonymous
+            authenticated: authenticated
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -212,18 +220,7 @@ display:
       sorts: {  }
       title: 'View All Reviews'
       header: {  }
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          content: '<a href="/view-all-reviews/{{ product_id }}"></a>'
-          plugin_id: text_custom
+      footer: {  }
       empty: {  }
       relationships:
         field_review_cid:
@@ -283,6 +280,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_review'
   page_1:
@@ -299,5 +297,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_review'

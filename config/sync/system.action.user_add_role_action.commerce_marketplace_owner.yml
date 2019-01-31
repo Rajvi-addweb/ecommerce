@@ -1,0 +1,14 @@
+uuid: 2e0b894a-01bf-4658-83d4-992f51b8988e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.commerce_marketplace_owner
+  module:
+    - user
+id: user_add_role_action.commerce_marketplace_owner
+label: 'Add the Marketplace owner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: commerce_marketplace_owner

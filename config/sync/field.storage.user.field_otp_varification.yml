@@ -1,0 +1,26 @@
+uuid: 497d99ee-046b-4c11-83d2-d8662e0d6d49
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - otp_verification
+  module:
+    - user
+_core:
+  default_config_hash: AJSdOmgHgTxs_vITK7BjByEzNyyloFylEJ1Hrwfubuo
+id: user.field_otp_varification
+field_name: field_otp_varification
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

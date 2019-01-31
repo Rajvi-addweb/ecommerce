@@ -1,0 +1,9 @@
+name: Otp Verification
+type: module
+description: 'otp verification feature'
+package: Custom
+version: 8.x
+core: 8.x
+dependencies:
+    - drupal:telephone
+    - drupal:user

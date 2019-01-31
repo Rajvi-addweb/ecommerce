@@ -1,0 +1,21 @@
+uuid: aa607791-13fc-45b1-84e9-d7e25e93de22
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.phone_number_2
+  module:
+    - telephone
+id: commerce_order.default.phone_number_2
+field_name: phone_number_2
+entity_type: commerce_order
+bundle: default
+label: 'Phone number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

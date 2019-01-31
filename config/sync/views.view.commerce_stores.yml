@@ -1,6 +1,6 @@
 uuid: 14bb3c1f-d986-4d03-b022-045e9277ee9c
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - commerce

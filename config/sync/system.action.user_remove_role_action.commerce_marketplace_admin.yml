@@ -1,0 +1,14 @@
+uuid: 99331ae5-8aa4-4bfb-a903-ec82a893ee5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.commerce_marketplace_admin
+  module:
+    - user
+id: user_remove_role_action.commerce_marketplace_admin
+label: 'Remove the Marketplace admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: commerce_marketplace_admin

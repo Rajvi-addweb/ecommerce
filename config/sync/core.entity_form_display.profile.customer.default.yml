@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.profile.customer.address
+    - field.field.profile.customer.phone_number
     - profile.type.customer
   enforced:
     module:
       - commerce_order
   module:
     - address
+    - telephone
 _core:
   default_config_hash: 7mnnVkJkUSPhil9xoiTfdTivMqxCUloT_71AHWNUbJg
 id: profile.customer.default
@@ -17,9 +19,34 @@ targetEntityType: profile
 bundle: customer
 mode: default
 content:
+  '':
+    type: sms_telephone
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   address:
     type: address_default
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  is_default:
+    type: sms_telephone
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  phone_number:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  status:
+    type: sms_telephone
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content

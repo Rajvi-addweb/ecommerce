@@ -18,6 +18,7 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'sms verify phone number'
   - 'subscribe to newsletters'
   - 'use text format basic_html'
   - 'view any ecomme_section entities'

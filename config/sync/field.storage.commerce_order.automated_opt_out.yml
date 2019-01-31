@@ -1,0 +1,18 @@
+uuid: aec195aa-1770-498d-8f63-b4bf03cb2e44
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.automated_opt_out
+field_name: automated_opt_out
+entity_type: commerce_order
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

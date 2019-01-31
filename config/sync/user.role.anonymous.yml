@@ -15,6 +15,7 @@ permissions:
   - 'access site-wide contact form'
   - 'post comments'
   - 'search content'
+  - 'sms verify phone number'
   - 'subscribe to newsletters'
   - 'use text format restricted_html'
   - 'view any ecomme_section entities'

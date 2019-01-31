@@ -1,0 +1,30 @@
+uuid: fe321f63-d7ff-4c3f-9ca7-e0bb81df7f19
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8K3DxYgfV-UePnB2t8T_HLu2O7JFiidSJTpM1KuuFMc
+id: commerce_marketplace_owner
+label: 'Marketplace owner'
+weight: 4
+is_admin: null
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create default commerce_product'
+  - 'create online commerce_store'
+  - 'delete own default commerce_product'
+  - 'manage default commerce_product_variation'
+  - 'manage own commerce_payment_method'
+  - 'search content'
+  - 'update own default commerce_product'
+  - 'update own online commerce_store'
+  - 'view commerce_product'
+  - 'view commerce_store'
+  - 'view default commerce_product'
+  - 'view own commerce_order'
+  - 'view own customer profile'
+  - 'view own unpublished commerce_product'

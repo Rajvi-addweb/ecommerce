@@ -1,0 +1,15 @@
+uuid: 14718ccd-2846-4c7a-a2b3-28404177ddd7
+langcode: en
+status: true
+dependencies: {  }
+id: testing
+label: testing
+events:
+  -
+    event_name: rules_user_login
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule

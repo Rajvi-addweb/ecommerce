@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.default
+    - field.field.commerce_order.default.automated_opt_out
     - field.field.commerce_order.default.order_items
+    - field.field.commerce_order.default.phone_number
+    - field.field.commerce_order.default.phone_number_2
+    - field.field.commerce_order.default.shipments
   module:
     - commerce_order
     - inline_entity_form
+    - telephone
 _core:
   default_config_hash: 1NKrIQBqELStd0cyiuHeNArhuPvOZj36faDEG1dWqEA
 id: commerce_order.default.default
@@ -21,12 +26,26 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  automated_opt_out:
+    type: boolean_checkbox
+    weight: 23
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
   billing_profile:
     type: commerce_billing_profile
     weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
+  cart:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 20
+    region: content
+    third_party_settings: {  }
   order_items:
     type: inline_entity_form_complex
     weight: 1
@@ -40,11 +59,26 @@ content:
       form_mode: default
     third_party_settings: {  }
     region: content
+  phone_number:
+    weight: 24
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  phone_number_2:
+    weight: 25
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
 hidden:
   created: true
   ip_address: true
   mail: true
   order_number: true
+  shipments: true
   state: true
   store_id: true
   uid: true

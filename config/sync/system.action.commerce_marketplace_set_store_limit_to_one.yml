@@ -1,0 +1,13 @@
+uuid: 1728a773-2a30-437c-964c-80663cb712dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_marketplace
+_core:
+  default_config_hash: vBWv48fz3zsHlTplCGGWmEzS1fNV_Q4XGecXhy1OdaI
+id: commerce_marketplace_set_store_limit_to_one
+label: 'Set store type limit to one'
+type: commerce_store
+plugin: commerce_marketplace_set_store_limit_to_one
+configuration: {  }

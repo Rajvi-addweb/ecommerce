@@ -1,0 +1,24 @@
+uuid: 88f30245-44aa-4429-939a-f9ce35c006c2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - otp_verification
+  module:
+    - telephone
+    - user
+_core:
+  default_config_hash: EpVfX_0E-2vyCVv5nRjGjgPAlkqUxzHu4unndDCY-Dc
+id: user.field_mo
+field_name: field_mo
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

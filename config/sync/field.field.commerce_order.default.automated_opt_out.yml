@@ -1,0 +1,21 @@
+uuid: 2a8848a7-d646-41ce-b80f-0a55bc5539aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.automated_opt_out
+id: commerce_order.default.automated_opt_out
+field_name: automated_opt_out
+entity_type: commerce_order
+bundle: default
+label: 'Opt out of SMS messages.'
+description: 'SMS messages requested by you are exempt.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Do not receive SMS messages from this site.'
+  off_label: 'Receive SMS messages from this site.'
+field_type: boolean

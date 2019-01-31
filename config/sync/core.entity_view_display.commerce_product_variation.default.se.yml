@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.se
+    - field.field.commerce_product_variation.default.attribute_colour
     - field.field.commerce_product_variation.default.attribute_size
     - field.field.commerce_product_variation.default.field_discount
     - field.field.commerce_product_variation.default.field_discount_percentage
@@ -36,6 +37,7 @@ content:
       currency_display: symbol
     third_party_settings: {  }
 hidden:
+  attribute_colour: true
   attribute_size: true
   field_discount: true
   field_featured_variation: true

@@ -1,0 +1,14 @@
+uuid: 1ece9896-9a5f-41ad-a6ee-25569f8bb3fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.commerce_marketplace_admin
+  module:
+    - user
+id: user_add_role_action.commerce_marketplace_admin
+label: 'Add the Marketplace admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: commerce_marketplace_admin

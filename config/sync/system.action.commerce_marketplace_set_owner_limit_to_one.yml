@@ -1,0 +1,13 @@
+uuid: e9dc44a8-944b-4317-929f-945bb7d0e4e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_marketplace
+_core:
+  default_config_hash: _Y_Bw2AXHG6_3G4H9kD-VfRKrT1PS4SElcPjIcu4uLw
+id: commerce_marketplace_set_owner_limit_to_one
+label: 'Set owner store limit to one'
+type: commerce_store
+plugin: commerce_marketplace_set_owner_limit_to_one
+configuration: {  }

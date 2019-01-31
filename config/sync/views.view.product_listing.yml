@@ -77,6 +77,14 @@ display:
                 is_secondary: false
                 rewrite:
                   filter_rewrite_values: ''
+            attribute_colour_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: true
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
             field_brands_target_id:
               bef_format: bef
               more_options:
@@ -157,7 +165,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-          group_column: ''
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -169,12 +177,9 @@ display:
           field_api_classes: false
           plugin_id: field
         title:
+          id: title
           table: commerce_product_field_data
           field: title
-          id: title
-          entity_type: null
-          entity_field: title
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
@@ -222,7 +227,7 @@ display:
           click_sort_column: value
           type: string
           settings: {  }
-          group_column: value
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -232,6 +237,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: null
+          entity_field: title
+          plugin_id: field
         variations:
           id: variations
           table: commerce_product__variations
@@ -340,6 +348,50 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: commerce_product_attribute_value
+        attribute_colour_target_id:
+          id: attribute_colour_target_id
+          table: commerce_product_variation__attribute_colour
+          field: attribute_colour_target_id
+          relationship: variations
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            7: '7'
+            8: '8'
+            10: '10'
+            9: '9'
+            11: '11'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: attribute_colour_target_id_op
+            label: colour
+            description: ''
+            use_operator: false
+            operator: attribute_colour_target_id_op
+            identifier: attribute_colour_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: commerce_product_attribute_value
         status:
           value: '1'
           table: commerce_product_field_data
@@ -396,6 +448,48 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        delta:
+          id: delta
+          table: commerce_product__variations
+          field: delta
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
       sorts:
         title:
           id: title
@@ -431,7 +525,7 @@ display:
           table: commerce_product_variation__field_discount_price
           field: field_discount_price_number
           relationship: variations
-          group_type: count_distinct
+          group_type: group
           admin_label: ''
           order: ASC
           exposed: true
@@ -505,7 +599,7 @@ display:
           plugin_id: string
       display_extenders: {  }
       css_class: 'summer-product-wrap section'
-      group_by: false
+      group_by: true
       filter_groups:
         operator: AND
         groups:

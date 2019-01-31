@@ -30,3 +30,4 @@ hidden:
   commerce_remote_id: true
   member_for: true
   profile_customer: true
+  simplenews: true
